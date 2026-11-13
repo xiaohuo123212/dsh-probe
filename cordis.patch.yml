@@ -1,0 +1,8 @@
+# Inserts the probe workbench into the profile. The row is inert until the user
+# calls one of its probe_* tools; it adds no model-visible prompt text.
+- insert:
+    - id: probe
+      name: 'dsh-probe'
+      config:
+        defaultTimeoutSec: 120
+        maxOutputBytes: 1048576

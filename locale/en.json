@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Probe workbench",
+    "description": "Temporary instrumentation and throwaway verification scripts: insert, run, tear down byte-identically, and keep the questions you answered."
+  }
+}

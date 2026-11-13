@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="dsh-probe">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f6feb"/>
+      <stop offset="1" stop-color="#f0883e"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#0d1117"/>
+  <path d="M96 256h96" stroke="#30363d" stroke-width="18" stroke-linecap="round"/>
+  <path d="M320 256h96" stroke="#30363d" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="112" fill="none" stroke="url(#g)" stroke-width="20"/>
+  <circle cx="256" cy="256" r="52" fill="none" stroke="url(#g)" stroke-width="20"/>
+  <path d="M256 96v56M256 360v56M96 256h56M360 256h56" stroke="url(#g)" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="12" fill="#f0883e"/>
+  <!-- temporary marker ticks -->
+  <path d="M176 176l-28-28M336 176l28-28M176 336l-28 28M336 336l28 28" stroke="#8b949e" stroke-width="14" stroke-linecap="round" stroke-dasharray="4 18"/>
+</svg>

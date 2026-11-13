@@ -1,0 +1,63 @@
+{
+  "name": "dsh-probe",
+  "version": "0.1.0",
+  "description": "Probe workbench for DeepSeek Harness: greppable probes that never leak into a commit, plus a residual guard and a question ledger.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./skill": "./skill/probe.md"
+  },
+  "files": [
+    "index.js",
+    "CONTRACT.md",
+    "lib/*.js",
+    "skill/*.md",
+    "docs/*.md",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "install/*.ps1",
+    "test/*.mjs",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "probe",
+    "instrumentation",
+    "debugging",
+    "observability",
+    "temporary"
+  ],
+  "author": "xiaohuo123212",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaohuo123212/dsh-probe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiaohuo123212/dsh-probe/issues"
+  },
+  "homepage": "https://github.com/xiaohuo123212/dsh-probe#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "test:agent": "node --test --test-isolation=none test/markers.test.mjs test/runner.test.mjs test/guard.test.mjs test/integration.test.mjs test/package.test.mjs",
+    "prepublishOnly": "npm test"
+  }
+}
