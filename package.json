@@ -56,8 +56,8 @@
     "node": ">=20"
   },
   "scripts": {
-    "test": "node --test test/",
-    "test:agent": "node --test --test-isolation=none test/markers.test.mjs test/runner.test.mjs test/guard.test.mjs test/integration.test.mjs test/package.test.mjs",
+    "test": "node --test test/guard.test.mjs test/integration.test.mjs test/markers.test.mjs test/package.test.mjs test/runner.test.mjs",
+    "test:agent": "node --test --test-isolation=none test/guard.test.mjs test/integration.test.mjs test/markers.test.mjs test/package.test.mjs test/runner.test.mjs",
     "prepublishOnly": "npm test"
   }
 }
